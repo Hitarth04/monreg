@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple registration form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> 
+
+<script>
+  function showMessage() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+    setTimeout(function() {
+      modal.style.display = "none";
+    }, 5000); // Change 3000 to the desired delay in milliseconds (e.g., 3000 = 3 seconds)
+  }
+</script>
+
+  </head>
+  <body>
+    
+    <div class="main-block">
+
+      <div class="header">
+        <a href="#default" class="logo"><img src="image-1.png"></a>
+      </div>
+      <!-- Form -->
+      <h1>Registration</h1>
+      <form action="#" onsubmit="showMessage(); return false;">
+
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Username" required/>
+
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="email" name="name" id="name" placeholder="Email" required/>
+
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="name" id="name" placeholder="Password" required/>
+
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="name" id="name" placeholder="Confirm Password" required/>
+
+        <label id="icon" for="name"><i class="fas fa-map-pin"></i></label>
+        <input type="text" name="name" id="Country" placeholder="Country" required/>
+
+        <hr>
+        <div class="terms">
+          <input type="checkbox" value="none" id="male" name="gender" required/>
+          <label for="male" class="checkbox">By clicking Register, you agree on our <a href="https://www.w3docs.com/privacy-policy">Privacy Policy for W3Docs</a>.</label>
+        </div>
+        <hr>
+        
+        <div class="btn-block">
+          <button type="submit" class="modal-link">Submit</button> <!-- Use the modal-link class for the button -->
+        </div>
+
+        </form>
+        <!-- Modal content -->
+  <div id="modal">
+    <div class="modal-content">
+      <h1>Registration Successful!</h1>
+      <p>Thank you for registering with us.</p>
+    </div>
+    </div>
+  </body>
+</html>
